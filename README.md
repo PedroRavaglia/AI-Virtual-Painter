@@ -23,8 +23,9 @@ Other features implemented:
 ![Drawing](https://user-images.githubusercontent.com/74989519/121436537-22e98880-c957-11eb-9904-55d43fe346ef.gif)
 
 
-# Libraries
+# Dependencies
 
 * [mediapipe](https://google.github.io/mediapipe/)
 * [OpenCV](https://opencv.org/)
+`pip install numpy opencv-python`
 
