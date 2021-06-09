@@ -1,7 +1,5 @@
 # AI-Virtual-Painter
 
-# About The Project
-
 I've used [mediapipe](https://google.github.io/mediapipe/) and [OpenCV](https://opencv.org/) libraries to track our hand position in real-time and draw on the screen using the index finger.
 
 Other features implemented:
@@ -27,5 +25,11 @@ Other features implemented:
 
 * [mediapipe](https://google.github.io/mediapipe/)
 * [OpenCV](https://opencv.org/)
-`pip install numpy opencv-python`
+* numpy
+
+`pip install opencv-python`
+
+`pip install numpy`
+
+`pip install mediapipe`
 
