@@ -14,13 +14,18 @@ Other features implemented:
 
 ![Selecting3](https://user-images.githubusercontent.com/74989519/121432273-d7cc7700-c950-11eb-91af-21f270f7c8a7.gif)
 
-* You can enter in the stand by mode using only the index and the pinky finger (indicated by a line between these 2 fingers). This mode is useful when you want to draw separate things on the screen.
-
 * After Drawing on the screen you can clean it just by closing your hand.
 
 ![Cleaning](https://user-images.githubusercontent.com/74989519/121432623-4b6e8400-c951-11eb-85ec-cd0612e797b2.gif)
 
+* You can enter in the stand by mode using only the index and the pinky finger (indicated by a line between these 2 fingers). This mode is useful when you want to draw separate things on the screen.
 
-# Technologies
+![Drawing](https://user-images.githubusercontent.com/74989519/121436537-22e98880-c957-11eb-9904-55d43fe346ef.gif)
+
+
+# Libraries
+
+* [mediapipe](https://google.github.io/mediapipe/)
+* [OpenCV](https://opencv.org/)
 
 # Launch
