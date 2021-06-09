@@ -28,4 +28,3 @@ Other features implemented:
 * [mediapipe](https://google.github.io/mediapipe/)
 * [OpenCV](https://opencv.org/)
 
-# Launch
