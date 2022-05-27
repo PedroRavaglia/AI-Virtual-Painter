@@ -14,10 +14,10 @@ height = 720
 cap.set(3, width)
 cap.set(4, height)
 
-# The image that will contain the drawing and after passed to the camera image
+# Image that will contain the drawing and then passed to the camera image
 imgCanvas = np.zeros((height, width, 3), np.uint8)
 
-# Getting all the header images in a list
+# Getting all header images in a list
 folderPath = 'Hand Tracking Project\Header'
 myList = os.listdir(folderPath)
 overlayList = []
@@ -29,7 +29,7 @@ for imPath in myList:
 header = overlayList[0]
 drawColor = (0, 0, 255)
 thickness = 20 # Thickness of the painting
-tipIds = [4, 8, 12, 16, 20] # fingertips indexes
+tipIds = [4, 8, 12, 16, 20] # Fingertips indexes
 xp, yp = [0, 0] # Coordinates that will keep track of the last position of the index finger
 
 with mp_hands.Hands(min_detection_confidence=0.85, min_tracking_confidence=0.5, max_num_hands=1) as hands:
@@ -47,11 +47,10 @@ with mp_hands.Hands(min_detection_confidence=0.85, min_tracking_confidence=0.5, 
         image.flags.writeable = False
         results = hands.process(image)
 
-        image.flags.writeable = True
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         if results.multi_hand_landmarks:
             for hand_landmarks in results.multi_hand_landmarks:
-                # Getting all the hand points coordinates
+                # Getting all hand points coordinates
                 points = []
                 for lm in hand_landmarks.landmark:
                     points.append([int(lm.x * width), int(lm.y * height)])
@@ -61,7 +60,7 @@ with mp_hands.Hands(min_detection_confidence=0.85, min_tracking_confidence=0.5, 
                     x1, y1 = points[8]  # Index finger
                     x2, y2 = points[12] # Middle finger
                     x3, y3 = points[4]  # Thumb
-                    x4, y4 = points[20] # pinky
+                    x4, y4 = points[20] # Pinky
 
                     ## Checking which fingers are up
                     fingers = []
